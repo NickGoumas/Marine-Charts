@@ -9,6 +9,8 @@ There are two forms of electronic charts available for download, RNC and ENC, Ra
 
 OceanServer's VectorMap v8.0 mission planning software seems to open either of these filetypes.
 
+QGIS v2.18.14 will open the ENC vector file as a vector layer.
+
 ## Hawai'i Mapping Research Group
 ### Bathymetric and Backscatter of Main Hawaiian Islands
 <http://www.soest.hawaii.edu/HMRG/multibeam/index.php>
