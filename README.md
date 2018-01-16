@@ -29,7 +29,9 @@ $ gdalwarp -t_srs EPSG:4326 19359_1.tif 19359_1_wgs.tif
 ```
 
 Example code found here:
-    gist.github.com/colemanm/4587067
+```
+gist.github.com/colemanm/4587067
+```
 
 ## Hawai'i Mapping Research Group
 ### Bathymetric and Backscatter of Main Hawaiian Islands
