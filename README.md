@@ -23,9 +23,9 @@ First convert the KAP and BSB file to .tif using gdal_translate:
 $ gdal_translate -of GTiff 19359_1.KAP 19359_1.tif
 ```
 
-Second reproject to WGS84 (geodetic projection) to import in QGIS:
+Second reproject to WGS84 (geodetic projection) to import in QGIS (using EPGS:3857 for now, should probably standardize on EPGS:4326 once some bugs are worked out in the new mission planner):
 ```
-$ gdalwarp -t_srs EPSG:4326 19359_1.tif 19359_1_wgs.tif
+$ gdalwarp -t_srs EPSG:3857 19359_1.tif 19359_1_wgs.tif
 ```
 
 Example code found here:
