@@ -18,11 +18,15 @@ QGIS v2.18.14 will open the ENC vector file as a vector layer.
 QGIS v2.18.14 cannot correctly open the RNC files. They need to be converted to GeoTIFF first.
 To convert from BSB and KAP to GeoTIFF, using the Oahu 19359 RNC chart as an example:
 
-First convert the KAP and BSB file to .tif using gdal_translate: 
-    $ gdal_translate -of GTiff 19359_1.KAP 19359_1.tif
+First convert the KAP and BSB file to .tif using gdal_translate:
+```
+$ gdal_translate -of GTiff 19359_1.KAP 19359_1.tif
+```
 
 Second reproject to WGS84 (geodetic projection) to import in QGIS:
-    $ gdalwarp -t_srs EPSG:4326 19359_1.tif 19359_1_wgs.tif
+```
+$ gdalwarp -t_srs EPSG:4326 19359_1.tif 19359_1_wgs.tif
+```
 
 Example code found here:
     gist.github.com/colemanm/4587067
